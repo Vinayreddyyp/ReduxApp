@@ -1,11 +1,9 @@
 
 import { FETCH_WEATHER } from '../actions/index';
 
-export default function(state,action) {
+export default function(state=[],action) {
 
-    if(typeof state === 'undefined') {
-        state = [];
-    }
+
 
   switch(action.type) {
       case 'FETCH_WEATHER':
